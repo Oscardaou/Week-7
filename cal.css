@@ -1,0 +1,40 @@
+header{
+    margin: auto;
+    padding: 3%;
+    background-color: aqua;
+    text-align: center;
+    font-size: 450%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 3%;
+    background-color: aqua;
+    text-align: center;
+    font-size: 250%;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1 fr);
+    grid-gap: 5px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.calculator button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#display {
+    grid-column: 1 / 5;
+    padding: 10px;
+    text-align: right;
+    background-color: #f0f0f0;
+}

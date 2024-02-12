@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <header>Calculator</header>
+    <div class="calculator">
+        <div id="display">0</div>
+        <button id="AC" onclick="ClearDisplay()" value="AC" >AC</button>
+        <button id="DE" onclick="deleteNumber()" value="DE" >DE</button>
+        <button id="." onclick="getRoot('√')" value="√">√</button>
+        <button id="/" onclick="getOperator('/')" value="/">/</button>
+        <button id="7" onclick="getNumber(7)" value="7">7</button>
+        <button id="8" onclick="getNumber(8)" value="8">8</button>
+        <button id="9" onclick="getNumber(9)" value="9">9</button>
+        <button id="plus" onclick="getOperator('*')" value="*">*</button>
+        <button id="4" onclick="getNumber(4)" value="4">4</button>
+        <button id="5" onclick="getNumber(5)" value="5">5</button>
+        <button id="6" onclick="getNumber(6)" value="6">6</button>
+        <button id="moins" onclick="getOperator('-')" value="-">-</button>
+        <button id="1" onclick="getNumber(1)" value="1">1</button>
+        <button id="2" onclick="getNumber(2)" value="2">2</button>
+        <button id="3" onclick="getNumber(3)" value="3">3</button>
+        <button id="mult" onclick="getOperator('+')" value="+">+</button>
+        <button id="00" onclick="getNumber(99)" value="00">00</button>
+        <button id="point" onclick="getNumber(0)" value="0">0</button>
+        <button id="." onclick="getNumber('.')" value=".">.</button>
+        <button id="egale" onclick="calculateEqual()" value="=">=</button>
+    </div>
+    <footer>
+        Oscar Daou
+    </footer>
+    <script src="calc.js"></script>
+</body>
+</html>
